@@ -1,0 +1,37 @@
+.form-error {
+  color: $danger;
+}
+
+.create-account-form {
+  h1 {
+    font-size: 16px;
+  }
+}
+
+.login-form {
+  h1 {
+    font-size: 24px;
+  }
+}
+
+.create-account-form, .login-form {
+  width: 300px;
+  margin: 0 auto;
+  h1 {
+    color: $brand;
+    text-align: center;
+  }
+  .btn {
+    margin: 30px 0 16px 0;;
+  }
+  .other-form-link {
+    text-align: center;
+  }
+}
+
+@include media($mobile) {
+  .create-account-form, .login-form {
+    padding: 0 20px;
+    width: 100%;
+  }
+}

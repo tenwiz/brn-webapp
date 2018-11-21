@@ -1,0 +1,67 @@
+$brand: #2d5b92;
+
+.body-no-scroll {
+  overflow-y: hidden;
+}
+
+
+
+.menu-overlay {
+  background: rgba(0,0,0,0.2);
+  position: absolute;
+  top: 0;
+  right: 0;
+  left: 0;
+  bottom: 0;
+  visibility: hidden;
+  opacity: 0;
+  z-index: 3;
+  &.overlay-visible {
+    opacity: 1;
+    visibility: visible;
+    transition: visibility 0s, opacity 0.3s linear;
+  }
+}
+
+.menu {
+    display:block;
+    -webkit-backface-visibility: hidden;
+    $menu-width:250px;
+
+    >div {
+        position:absolute;
+        z-index: 4;
+        top:0;
+        width:$menu-width;
+        height:100%;
+        transition: transform ease 200ms;
+        -webkit-backface-visibility: hidden;
+
+        &.right {
+            background: $brand;
+            right:$menu-width*-1;
+            -webkit-backface-visibility: hidden;
+        }
+
+        &.visible.right {
+            overflow-y: hidden;
+            padding-top: 30px;
+            transform: translate3d($menu-width*-1, 0, 0);
+            -webkit-transform: translate3d($menu-width*-1, 0, 0);
+            -webkit-backface-visibility: hidden;
+        }
+
+        >.menu-item {
+            font-size: 18px;
+            float:left;
+            width:100%;
+            margin:0;
+            padding:12px 15px;
+            cursor:pointer;
+            color:#fff;
+            &:hover {
+                color:#F0F0F0;
+            }
+        }
+    }
+}

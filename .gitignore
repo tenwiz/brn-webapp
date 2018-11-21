@@ -1,0 +1,4 @@
+node_modules/
+stripe_keys.sh
+settings.json
+prod-settings.json

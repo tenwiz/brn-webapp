@@ -1,0 +1,198 @@
+$transition-timing:         cubic-bezier(.66, -.33, 0, 1.33);
+// $transition-timing-reversed: cubic-bezier(1,.23,.28,.62);
+
+$transition-duration:       125ms;
+$transition-delay:          .05s;
+
+$gray-dark:                 #373a3c !default;
+$gray:                      #55595c !default;
+$gray-light:                #818a91 !default;
+$gray-lighter:              #eceeef !default;
+$gray-lightest:             #f7f7f9 !default;
+
+$brand-primary:             $brand !default; // actually a lighter shade of our logo color, #1d5caa.
+$brand-primary-alt:         #1d5caa;
+// $brand-dark:             #0f386b;
+$brand-success:             #15b880 !default;
+$brand-info:                darken(#5bc0de, 10%) !default;
+$brand-warning:             #fea50b !default;
+$brand-danger:              #e91717 !default;
+.item-step {
+  position: relative;
+  text-align: center;
+  display: inline-block;
+  margin: 0.5em 0;
+  width: 33.33%;
+}
+
+.item-flat {
+  background: #7d7e7d;
+}
+
+.done-item-number {
+  background: $brand;
+}
+
+.arrow {
+  margin-bottom: -5px;
+}
+
+.step-number {
+  position: relative;
+  display: inline-block;
+  top: 2px;
+  height: 6px;
+  width: 50px;
+  z-index: 7;
+  line-height: 30px;
+  text-align: center;
+  // background: linear-gradient(to bottom, #7d7e7d 20%,#565656 100%);
+  background: $light-gray;
+  text-shadow: rgba(0, 0, 0, 0.3) 1px 1px 0px;
+  color: #fff;
+  transition: background-color $transition-duration $transition-timing;
+
+}
+
+.step-text {
+  // color: #706d6d;
+  font-weight: 700;
+  // font-size: 0.7em;
+  padding: 0.5em;
+}
+
+.status {
+  // color: #706d6d;
+  // font-weight: 700;
+  // font-size: 0.8em;
+  // padding: 0.1em
+}
+
+.outline {
+  display: block;
+  position: absolute;
+  z-index: 1;
+  width: 100%;
+  margin: 0 10%;
+  background-color: $light-gray;
+  top: 14px;
+  height: 1px;
+}
+
+.number-outline {
+  position: relative;
+  z-index: 1;
+  box-shadow: inset 0px 1px 0px 0px  rgba(200,200,200,0.3),
+  inset 0px 2px 0px 0px  rgba(200,200,200,0.2),
+  inset 0px -1px 0px 0px rgba(200,200,200,0.3),
+  inset 0px -2px 0px 0px rgba(200,200,200,0.2);
+  background: #fff;
+  display: inline-block;
+  text-align: center;
+  height: 4px;
+  width: 38px;
+  left: auto;
+  right: auto;
+  margin-left: -(8px / 2);
+  margin-top: -(8px / 2);
+}
+
+.outline-first {
+  border-left: 1px solid rgba(100,100,100,0.2);
+  border-bottom-left-radius: 9px;
+  border-top-left-radius: 9px;
+}
+
+.outline-last {
+  border-right: 1px solid rgba(100,100,100,0.2);
+  border-bottom-right-radius: 9px;
+  border-top-right-radius: 9px;
+}
+
+// .active-item-number {
+  // background: linear-gradient(to bottom, #f9c667 0%,#f79621 100%);
+// }
+
+.done-flat-item-number {
+  // @extend .bg-success;
+  background: $brand;
+}
+
+.active-flat-item-number {
+  @extend .bg-primary;
+}
+
+.purchase-form {
+  width: 350px;
+  margin: 0 auto;
+  text-align: center;
+  h1 {
+    font-size: 20px;
+    em {
+      display: block;
+      font-size: 30px;
+    }
+  }
+  h2 {
+    font-size: 16px;
+    padding-bottom: 24px;
+  }
+  .form-group {
+    display: flex;
+  }
+  input {
+    display: inline-block;
+    &[name='number'] {
+      margin-bottom: 20px;
+      width: 100%;
+    }
+  }
+  .payment-icon {
+    margin: 0 20px 16px 20px;
+    width: 36px;
+  }
+  img {
+    padding-top: 20px;
+    &.payment-icon {
+      padding: 0;
+    }
+  }
+}
+
+@include media($mobile) {
+  .purchase-form {
+    width: 100%;
+  }
+}
+
+.confirmation-container {
+  h1 {
+    color: $brand;
+    margin-bottom: 20px;
+  }
+  h2 {
+    font-size: 16px;
+    margin: 60px 0 40px 0;
+  }
+  .btn {
+    width: 100%;
+    max-width: 300px;
+  }
+}
+
+@include media($mobile) {
+  .confirmation-container {
+    .btn {
+      max-width: none;
+    }
+  }
+}
+
+.ion-checkmark-circled {
+  color: $success;
+  font-size: 360%;
+}
+
+.ion-locked {
+  margin-right: 10px;
+}

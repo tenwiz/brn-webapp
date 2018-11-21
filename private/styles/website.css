@@ -1,0 +1,14 @@
+@import url(https://fonts.googleapis.com/css?family=Fira+Sans:400,300,500,700);
+
+h1, h2, h3, h4, h5, h6 {
+  color: #2d5b92;
+  font-family: 'Fira Sans';
+}
+
+img[alt=github] {
+  width: 200px;
+}
+
+img[alt=phone] {
+  height: 200px;
+}

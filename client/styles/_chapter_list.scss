@@ -1,0 +1,23 @@
+.chapter-list {
+  ol {
+    padding:  80px 0 20px;
+
+    li {
+      border-bottom: 1px dotted $light-gray;
+      font-size: 18px;
+      padding: 24px 0;
+
+      &.inactive {
+        color: $light-gray;
+      }
+    }
+  }
+}
+
+@include media($mobile) {
+  .chapter-list {
+    ol {
+      padding: 30px 16px 20px 16px;
+    }
+  }
+}

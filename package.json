@@ -1,0 +1,50 @@
+{
+  "name": "simple-todos",
+  "private": true,
+  "scripts": {
+    "start": "meteor run",
+    "clear-cache": "cd .meteor/local/bundler-cache/linker && rm *"
+  },
+  "dependencies": {
+    "formsy-react": "^0.18.0",
+    "fs": "0.0.2",
+    "ga-react-router": "^2.0.0",
+    "highlight.js": "^9.3.0",
+    "history": "^2.1.0",
+    "mailchimp": "^1.1.6",
+    "mailchimp-api": "^2.0.7",
+    "markdown-it": "^6.0.1",
+    "marked": "^0.3.5",
+    "meteor-node-stubs": "~0.2.0",
+    "node-fetch": "^1.5.0",
+    "radium": "^0.17.1",
+    "react": "^0.14.8",
+    "react-addons-create-fragment": "^0.14.8",
+    "react-addons-css-transition-group": "^0.14.8",
+    "react-addons-linked-state-mixin": "^0.14.8",
+    "react-addons-perf": "^0.14.8",
+    "react-addons-pure-render-mixin": "^0.14.8",
+    "react-addons-test-utils": "^0.14.8",
+    "react-addons-transition-group": "^0.14.8",
+    "react-addons-update": "^0.14.8",
+    "react-body-classname": "^1.0.1",
+    "react-dom": "^0.14.8",
+    "react-fontawesome": "^0.3.3",
+    "react-ga": "^1.4.1",
+    "react-helmet": "^3.1.0",
+    "react-highlight": "^0.8.0",
+    "react-icons": "^2.0.0",
+    "react-mounter": "^1.2.0",
+    "react-raw-html": "^0.4.0",
+    "react-responsive": "^1.1.2",
+    "react-router": "^2.0.1",
+    "react-stripe-checkout": "^1.8.0",
+    "scroll-behavior": "^0.4.0",
+    "tracker-component": "^1.3.16",
+    "underscore": "^1.8.3"
+  },
+  "devDependencies": {
+    "babel-eslint": "^6.0.3",
+    "eslint": "^2.8.0"
+  }
+}

@@ -1,0 +1,9 @@
+User-agent: *
+Allow: /
+Allow: /get-the-book
+Allow: /chapters/introducing-react-native
+Allow: /chapters/getting-started
+Allow: /chapters/the-beginnings-of-an-app
+Allow: /chapters/basic-tabbar-navigation
+
+Disallow: /*

@@ -1,0 +1,87 @@
+.navigation-bar {
+  background: #fff;
+  position: relative;
+  height: 70px;
+  z-index: 2;
+  border-bottom: 1px solid #D2D2D2;
+  padding: 24px 50px 0 30px;
+  top: 0;
+  right: 0;
+  left: 0;
+  a {
+    color: #2D5B92 !important;
+  }
+  a#title, .dropdown-toggle {
+    text-decoration: none;
+    text-transform: lowercase;
+    font-weight: 500;
+    letter-spacing: 0px;
+  }
+  a#title {
+    font-size: 20px;
+  }
+  .line {
+    color: $light-gray;
+  }
+  .dropdown-toggle {
+    font-size: 14px;
+    padding-top: 0px;
+    text-transform: none;
+    &:hover {
+      background: #fff;
+    }
+  }
+}
+.navigation-bar a {
+  font-family: 'Fira Sans';
+  color: #1F7CDC;
+}
+
+nav ul {
+  padding-right: 40px;
+  list-style-type: none;
+  float: right;
+  display: inline;
+}
+nav ul li {
+  color: #ffffff;
+  display: inline;
+}
+
+@media only screen and (max-width: 768px) {
+
+  .navigation-bar {
+    padding: 24px 0 0 0;
+    text-align: center;
+  }
+
+  a#title {
+    font-size: 16px;
+  }
+
+}
+
+.hamburger-container {
+  position: absolute;
+  right: 20px;
+  top: 20px;
+}
+
+.hamburger {
+    position: relative;
+    display: inline-block;
+    width: 1.5em;
+    height: 0.8em;
+    margin-right: 0.3em;
+    border-top: 0.25em solid $brand;
+    border-bottom: 0.25em solid $brand
+}
+
+.hamburger:before {
+    content: "";
+    position: absolute;
+    top: 0.9em;
+    left: 0px;
+    width: 100%;
+    border-top: 0.25em solid $brand;
+}

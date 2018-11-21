@@ -1,0 +1,219 @@
+@import url(https://fonts.googleapis.com/css?family=Fira+Sans:400,300,400italic,500,700);
+
+@font-face {
+  font-family: 'Fira Sans';
+}
+
+.login-form {
+  padding-top: 70px;
+}
+
+.doc-content {
+  padding-top: 10px;
+}
+
+.logo {
+  background: url("images/railsonmaui.png") no-repeat left bottom;
+  display: inline-block;
+  height: 40px;
+  margin-right: 10px;
+  width: 146px;
+}
+
+.twitter-image {
+  background: url("images/twitter_64.png") no-repeat;
+  height: 64px;
+  width: 64px;
+}
+
+.open-sans-light {
+  font-family: 'OpenSans-Light', sans-serif;
+}
+
+#nav.affix {
+  position: fixed;
+  top: 3px;
+  width: 80%;
+  z-index: 10;
+}
+
+.element-enter {
+  opacity: 0.01;
+}
+.element-enter.element-enter-active {
+  opacity: 1;
+  transition: opacity 0.5s ease-in;
+}
+
+.element-leave {
+  opacity: 1;
+}
+.element-leave.element-leave-active {
+  opacity: 0.01;
+  transition: opacity 0.5s ease-in;
+}
+
+.active:visited,
+.active {
+  color: purple;
+  font-weight: bold;
+  text-decoration: underline;
+}
+
+.btn {
+  margin: auto;
+}
+
+.post-wrapper {
+  width: 80%;
+}
+
+* {
+  text-decoration: none !important;
+}
+
+.form-actions {
+  text-align: center;
+}
+
+.error-messages {
+  font-weight: 300;
+  margin-left: 16em;
+}
+
+
+.btn {
+  font-family: 'Fira Sans';
+  text-transform: uppercase;
+  border-radius: 0 !important;
+  background-color: #1F7CDC;
+}
+
+.btn:disabled {
+  background-color: #1F7CDC !important;
+}
+
+/* ===============
+    Inputs
+   =============== */
+
+.modal-container {
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+}
+
+.modal-backdrop {
+  position: relative;
+  height: 100%;
+  width: 100%;
+  background: rgba(0, 0, 0, 0.1);
+}
+
+.btn-default {
+  border-width: 2px 0 0 0;
+  color: #1F7CDC;
+  background: #ffffff;
+  padding: 13px 60px 13px 60px;
+}
+@media only screen and (min-width: 480px) {
+  .btn-default {
+    border: 2px solid #D8D8D8;
+  }
+}
+.btn-default:hover, .btn-default:active {
+  border-color: #fff;
+}
+
+.modal-background {
+  text-align: center;
+  padding: 20px 50px 20px 50px;
+  background: white;
+  -webkit-box-shadow: 0 0 30px #BABABA;
+  -moz-box-shadow: 0 0 30px #BABABA;
+  box-shadow: 0 0 30px #BABABA;
+  -webkit-background-clip: padding-box;
+  -moz-background-clip: padding-box;
+  background-clip: padding-box;
+}
+@media only screen and (min-width: 480px) {
+  .modal-background {
+    position: absolute;
+    height: auto;
+    width: auto;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
+}
+.modal-background h3 {
+  font-weight: 400;
+  padding-bottom: 30px;
+}
+.modal-background h4 {
+  padding-bottom: 30px;
+}
+.modal-background p {
+  color: #1F7CDC;
+  font-size: 20px;
+  font-weight: 400;
+}
+.modal-background .btn {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+}
+@media only screen and (min-width: 480px) {
+  .modal-background .btn {
+    position: static;
+    margin: 0 auto;
+    max-width: 200px;
+  }
+}
+@media only screen and (max-width: 480px) {
+  .modal-background {
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+  }
+}
+
+.icon-row {
+  margin-bottom: 30px;
+}
+
+.twitter-icon,
+.facebook-icon {
+  height: 32px;
+  width: 32px;
+  margin: 15px;
+}
+
+@media only screen and (min-width: 480px) {
+  .modal-appear {
+    top: 170%;
+  }
+
+  .modal-appear.modal-appear-active {
+    top: 50%;
+    transition: top 0.45s ease-in;
+  }
+}
+@media only screen and (max-width: 480px) {
+  .modal-appear {
+    top: 100%;
+  }
+
+  .modal-appear.modal-appear-active {
+    top: 0%;
+    transition: top 0.45s ease-in;
+  }
+}

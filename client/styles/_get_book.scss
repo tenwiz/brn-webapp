@@ -1,0 +1,61 @@
+.get-book-container {
+  padding: 50px 0;
+  text-align: center;
+  h1 {
+    font-size: 40px;
+    margin: 0;
+    padding: 0;
+  }
+  h2 {
+    font-size: 16px;
+    margin: 0;
+    padding-bottom: 50px;
+  }
+}
+
+.heading-prefix {
+  display: block;
+  font-size: 20px;
+  padding-bottom: 5px;
+}
+
+.whats-included-container {
+  min-height: 300px;
+  h3 {
+    color: $brand;
+    font-size: 24px;
+    padding: 20px 0 30px 0;
+  }
+  .btn {
+    max-width: 300px;
+    width: 100%;
+  }
+  @include media($mobile) {
+    .btn {
+      max-width: none;
+    }
+  }
+}
+
+.included-callout {
+  display: inline-block;
+  margin-bottom: 30px;
+  padding: 20px;
+  i {
+    color: $brand;
+    font-size: 260%;
+    max-width: 30%;
+    vertical-align: top;
+  }
+  h4 {
+    margin: 10px 0;
+    padding: 0;
+    font-size: 16px;
+    font-weight: 500;
+  }
+  h5 {
+    font-size: 12px;
+    line-height: 1.8;
+    margin: 10px 0;
+  }
+}
